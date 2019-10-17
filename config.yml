@@ -1,0 +1,19 @@
+title: Maven with Checkstyle
+tagline: A brand new course on Learning Lab
+description: >-
+  Ever wanted to let your colleagues CI builds fail because they didn't comply
+  with the Code Style? Let me just step right in.
+template:
+  repo: maven-with-checkstyle-template
+  name: maven-with-checkstyle
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
